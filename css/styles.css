@@ -58,6 +58,7 @@ nav{
     height: 80px;
     width: 100%;
     align-items: center;
+    padding: 0 40px;
 }
 
 .nav .logo{
@@ -82,7 +83,7 @@ nav{
     width: 80px;
     height: 80px;
     display: none;
-    background: #3d5d9c;
+    /*background: #3d5d9c;*/
     text-align: center;
     z-index: 100;
     cursor: pointer;
@@ -209,7 +210,6 @@ nav{
 
 
 .questions{
-    width: 100%;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -399,4 +399,164 @@ footer{
     color: #fff;
     background-color: #1fde82;
     border: #1fde82;
+}
+
+/**Breakpoins responsive*/
+
+@media screen and (max-width:800px){
+    .titulo{
+        font-size: 45px;
+    }
+
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .contenido-header>img{
+        width: 400px;
+    }
+
+    .textos-header{
+        margin: 0;
+    }
+
+    /*About us*/
+
+    .articulo{
+        width: 45%;
+    }
+
+    /* Questions */
+
+    .questions{
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .questions>img{
+        width: 400px;
+    }
+    
+
+    /* Results */
+
+    .conten-results{
+        flex-direction: column-reverse;
+
+    }
+    
+    .results-text>a{
+        margin-bottom: 60px;
+    }
+
+    .numbers{
+        width: 100%;
+    }
+
+    .results-text{
+        width: 100%;
+    }
+
+    /* Services */
+
+    .services{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .box-skills{
+        margin:  0 0 40px 0;
+    }
+
+    .box-skills h4{
+        width: 500px;
+    }
+
+    .services>img{
+        width: 400px;
+    }
+
+    /* Footer */
+
+    footer{
+        justify-content: space-evenly;
+    }
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .titulo{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .contenido-header{
+        height: 650px;
+    }
+
+    .nav{
+        padding: 0 10px;
+    }
+
+    .contenido-header>img{
+        width: 200px;
+    }
+
+    .enlaces-header{
+        display: none;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+
+    /* About us */
+
+    .articulo{
+        width: 95%;
+    }
+
+    /* Questions */
+
+    .questions>img{
+        width: 200px;
+    }
+
+    /* Results */
+
+    .numbers .number{
+        width: 95%;
+    }
+
+    .results-text h4{
+        font-size: 35px;
+    }
+
+    /* Services */
+
+    .services>img{
+        width: 200px;
+    }
+
+    .box-skills h4{
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
 }
