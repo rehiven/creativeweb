@@ -254,7 +254,7 @@ nav {
 /* Results */
 
 .results {
-  background: #2570ff;
+  background: #11998e;
   padding-top: 30px;
 }
 
@@ -515,17 +515,18 @@ footer {
 
   .enlaces-header {
     position: fixed;
-    background: #8e2de2; /* fallback for old browsers */
+    background: #11998e; /* fallback for old browsers */
     background: -webkit-linear-gradient(
-      to right,
-      #4a00e0,
-      #8e2de2
+      to top,
+      #38ef7d,
+      #11998e
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
-      to right,
-      #4a00e0,
-      #8e2de2
+      to top,
+      #38ef7d,
+      #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     top: 0;
     right: 0;
     width: 100%;
@@ -534,15 +535,15 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    clip-path: circle(0.0% at 100% 0);
+    clip-path: circle(0% at 100% 0);
   }
 
-  .nav .menudos{
-    clip-path: circle(146.9% at 100% 0);
+  .nav .menudos {
+    clip-path: circle(140.9% at 100% 0);
   }
 
-  .nav .enlaces-header a{
-      color: white;
+  .nav .enlaces-header a {
+    color: white;
   }
   .hamburguer {
     display: block;
